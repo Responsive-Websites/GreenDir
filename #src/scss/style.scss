@@ -1,3 +1,4 @@
+@import 'null';
 @mixin font($font_name, $file_name, $weight, $style) {
   @font-face {
     font-family: $font_name;
@@ -8,30 +9,5 @@
     font-style: #{$style};
   }
 }
-
 @import 'fonts';
-
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 20px;
-  }
-}
-
-body {
-  font-size: 30px;
-  background-color: blueviolet;
-  display: flex;
-  flex-flow: column nowrap;
-  color: white;
-  font-family: fribourg-normal;
-}
-p {
-  padding: 100px;
-  background: url('../img/tested.jpg') 0 0 no-repeat;
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    font-size: 10px;
-  }
-}
+@import 'base';
