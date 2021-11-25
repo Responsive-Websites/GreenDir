@@ -1,0 +1,65 @@
+// header styles
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+
+  &__container {
+    display: flex;
+    flex-flow: row;
+    min-height: 104px;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: inherit;
+  }
+
+  &__menu {
+    margin: 0px 0px 0px 133px;
+
+    @media screen and (max-width: $breakpoint-smallDesc) {
+      & {
+        margin: 0px 0px 0px 80px;
+      }
+    }
+    @media screen and (max-width: $breakpoint-Ipad) {
+      & {
+        margin: 0px 0px 0px 40px;
+      }
+    }
+  }
+}
+
+.menu {
+  //safe paddings (To prevent elements from sticking to the header)
+  padding: 5px 0px;
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__item {
+    margin: 0px 21px 0px 0px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: $fontColorMenu;
+    //24 - base line height / $fontSizeMain * 100
+    // line-height: 24 / 14 * 100%;
+    line-height: 171%;
+    font-weight: 600;
+  }
+}
+
+//------------------- --

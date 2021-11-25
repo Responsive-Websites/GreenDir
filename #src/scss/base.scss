@@ -1,8 +1,11 @@
 body {
   height: 100%;
   line-height: 1;
-  font-size: 16px;
-  color: #000;
+
+  font-family: $fontFamilyMain;
+  font-weight: $fontWeightMain;
+  font-size: $fontSizeMain;
+  color: $fontColorMain;
 }
 
 .wrapper {
@@ -10,7 +13,9 @@ body {
   overflow: hidden;
 }
 
-._container {
+.container {
   max-width: 1040px;
+  padding: 0px 15px;
   margin: 0 auto;
+  box-sizing: content-box;
 }
