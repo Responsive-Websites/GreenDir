@@ -277,16 +277,104 @@ body {
   padding: 184px 0px 191px 0px;
   position: relative;
   z-index: 2;
+  max-width: 400px;
+}
+
+.main-block__body > *:not(:last-child) {
+  margin: 0px 0px 35px 0px;
+}
+
+.main-block__title {
+  font-size: 58px;
+  line-height: 137%;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.main-block__text {
+  color: #737373;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.main-block__buttons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: -10px 0;
+}
+
+.main-block__button {
+  border-radius: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 48px;
+  padding: 0px 36px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.main-block__button_border {
+  color: #998ceb;
+  border: solid 1px #998ceb;
+  background: #ffffff;
+}
+
+.main-block__button_violet {
+  color: #ffffff;
+  background: #998ceb;
+}
+
+@media screen and (min-width: 479px) {
+  .main-block__button:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .header__menu {
     margin: 0px 0px 0px 80px;
   }
+
+  .main-block__body {
+    padding: 120px 0px 191px 0px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header__menu {
     margin: 0px 0px 0px 40px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .main-block__title {
+    font-size: 42px;
+  }
+
+  .main-block__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .main-block__button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
