@@ -2,7 +2,12 @@
   flex: 1 1 auto;
   &__main-block {
   }
+  &__services {
+  }
 }
+
+// main block
+
 .main-block {
   position: relative;
   &__container {
@@ -108,3 +113,59 @@
     background: #998ceb;
   }
 }
+
+// ----------------------------------------------------
+
+// services block
+
+.services {
+  position: relative;
+  z-index: 2;
+  margin: -121px 0px 0px 0px;
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    margin: 0px -15px;
+  }
+
+  &__column {
+    padding: 0px 15px;
+    flex: 0 1 33.333%;
+  }
+
+  &__item {
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 10px;
+    height: 100%;
+  }
+}
+
+.item-service {
+  &__icon img {
+    max-width: 80px;
+
+    fill: #77e4d4;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+  }
+
+  &__text {
+    color: #737373;
+    line-height: 142%;
+  }
+}
+
+.item-service > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+// ----------------------------------------------------
