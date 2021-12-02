@@ -45,6 +45,11 @@
         padding: 120px 0px 191px 0px;
       }
     }
+    @media screen and (max-width: 479px) {
+      & {
+        padding: 115px 0px 160px 0px;
+      }
+    }
   }
   &__body > *:not(:last-child) {
     margin: 0px 0px 35px 0px;
@@ -126,13 +131,35 @@
   }
 
   &__body {
-    display: flex;
-    margin: 0px -15px;
+    @media screen and (min-width: 670px) {
+      & {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0px -15px;
+      }
+    }
   }
 
   &__column {
-    padding: 0px 15px;
     flex: 0 1 33.333%;
+
+    @media screen and (min-width: 670px) {
+      & {
+        padding: 0px 15px;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      & {
+        flex: 0 1 50%;
+      }
+      &:last-child {
+        flex: 1 1 100%;
+      }
+      &:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+      }
+    }
   }
 
   &__item {
@@ -141,18 +168,21 @@
     padding: 35px;
     border-radius: 10px;
     height: 100%;
+
+    @media screen and (max-width: 479px) {
+      & {
+        padding: 25px;
+      }
+    }
   }
 }
 
 .item-service {
   &__icon img {
     width: 100%;
-    fill: #998ceb;
   }
   &__icon {
     max-width: 80px;
-
-   
   }
 
   &__title {
@@ -171,5 +201,9 @@
 .item-service > *:not(:last-child) {
   margin: 0px 0px 10px 0px;
 }
+
+// ----------------------------------------------------
+
+// services block
 
 // ----------------------------------------------------
