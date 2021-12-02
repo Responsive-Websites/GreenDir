@@ -369,8 +369,12 @@ body {
 }
 
 .item-service__icon img {
+  width: 100%;
+  fill: #998ceb;
+}
+
+.item-service__icon {
   max-width: 80px;
-  fill: #77e4d4;
 }
 
 .item-service__title {

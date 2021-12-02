@@ -146,9 +146,13 @@
 
 .item-service {
   &__icon img {
+    width: 100%;
+    fill: #998ceb;
+  }
+  &__icon {
     max-width: 80px;
 
-    fill: #77e4d4;
+   
   }
 
   &__title {
