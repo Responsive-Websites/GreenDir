@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="icon icon-tabler icon-tabler-basket"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   stroke-width="2"
+   stroke="currentColor"
+   fill="none"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="basket.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="29.458333"
+     inkscape:cx="4.6506365"
+     inkscape:cy="12"
+     inkscape:window-width="1920"
+     inkscape:window-height="1020"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <path
+     stroke="none"
+     d="M0 0h24v24H0z"
+     fill="none"
+     id="path2" />
+  <polyline
+     points="7 10 12 4 17 10"
+     id="polyline4"
+     style="stroke:#77e4d4;stroke-opacity:1" />
+  <path
+     d="m 21,10 -2,8 c -0.192947,1.182808 -1.034478,2.024339 -2,2 H 11.724551 7 C 6.0344785,20.024339 5.1929473,19.182808 5,18 L 3,10 Z"
+     id="path6"
+     style="fill:none;stroke:#77e4d4;stroke-opacity:1"
+     sodipodi:nodetypes="cccccccc" />
+  <circle
+     cx="12"
+     cy="15"
+     r="2"
+     id="circle8"
+     style="stroke:#998ceb;stroke-opacity:1" />
+</svg>

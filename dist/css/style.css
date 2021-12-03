@@ -129,6 +129,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: #252b42;
+  background-color: #fafafa;
 }
 
 .wrapper {
@@ -239,6 +240,26 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.header-block {
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.header-block__title {
+  font-size: 40px;
+  line-height: 142%;
+  font-weight: 700;
+}
+
+.header-block__title:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+.header-block__sub-title {
+  color: #737373;
+  line-height: 142%;
 }
 
 .main-block {
@@ -384,6 +405,60 @@ body {
   margin: 0px 0px 10px 0px;
 }
 
+.advantages {
+  padding: 80px 0px;
+}
+
+.advantages__header {
+  margin: 0px 0px 50px 0px;
+}
+
+.advantages__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px -15px -30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantages__column {
+  padding: 0px 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  margin: 0px 0px 30px 0px;
+}
+
+.advantages__item {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.advantages__item > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+.advantages__icon img {
+  width: 70px;
+}
+
+.advantages__value {
+  font-size: 40px;
+  line-height: 142%;
+  font-weight: 700;
+  color: #000000;
+}
+
+.advantages__text {
+  color: #737373;
+  letter-spacing: 0.1px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
 @media screen and (min-width: 479px) {
   .main-block__button:not(:last-child) {
     margin-right: 10px;
@@ -407,9 +482,21 @@ body {
   }
 }
 
+@media screen and (max-width: 1020px) {
+  .advantages__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .header__menu {
     margin: 0px 0px 0px 80px;
+  }
+
+  .header-block__title {
+    font-size: 35px;
   }
 
   .main-block__body {
@@ -431,11 +518,37 @@ body {
   .services__column:not(:last-child) {
     margin: 0px 0px 30px 0px;
   }
+
+  .advantages {
+    padding: 50px 0px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header__menu {
     margin: 0px 0px 0px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-block__title {
+    font-size: 30px;
+  }
+
+  .advantages {
+    padding: 30px 0px;
+  }
+
+  .advantages__header {
+    margin: 0px 0px 35px 0px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .advantages__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
 
