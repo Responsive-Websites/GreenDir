@@ -6,6 +6,8 @@
   }
   &__advantages {
   }
+  &__practice {
+  }
 }
 
 // headers styles
@@ -308,6 +310,90 @@
     letter-spacing: 0.1px;
     font-size: 16px;
     line-height: 150%;
+  }
+}
+
+// ----------------------------------------------------
+
+// practice block
+
+.practice {
+  padding: 125px 0px 80px 0px;
+  @media screen and (max-width: 993px) {
+    & {
+      padding: 40px 0px 80px 0px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    & {
+      padding: 0px 0px 40px 0px;
+    }
+  }
+  &__container {
+  }
+  &__header {
+    margin: 0px 0px 45px 0px;
+    @media screen and (max-width: 767px) {
+      & {
+        margin: 0px 0px 30px 0px;
+      }
+    }
+  }
+  &__body {
+    margin: 0px -20px -30px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__column {
+    padding: 0px 20px;
+    flex: 0 1 25%;
+    margin: 0px 0px 30px 0px;
+    @media screen and (max-width: 1040px) {
+      & {
+        flex: 0 1 50%;
+      }
+    }
+    @media screen and (max-width: 630px) {
+      & {
+        flex: 0 1 100%;
+      }
+    }
+  }
+  &__item {
+  }
+}
+
+.item-practice {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  height: 100%;
+  &__link {
+    color: inherit;
+    display: inline-block;
+  }
+  &__content {
+    flex: 1 1 auto;
+    padding: 30px;
+    & > *:not(:last-child) {
+      margin: 0px 0px 15px 0px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  &__text {
+    color: #737373;
+    line-height: 142%;
+  }
+  &__image {
+    // 138 height 230 width
+    // 138 / 230 * 100 = 60%
+    display: block;
+    padding: 0px 0px 60% 0px;
   }
 }
 

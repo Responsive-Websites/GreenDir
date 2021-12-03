@@ -459,6 +459,78 @@ body {
   line-height: 150%;
 }
 
+.practice {
+  padding: 125px 0px 80px 0px;
+}
+
+.practice__header {
+  margin: 0px 0px 45px 0px;
+}
+
+.practice__body {
+  margin: 0px -20px -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.practice__column {
+  padding: 0px 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  margin: 0px 0px 30px 0px;
+}
+
+.item-practice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.item-practice__link {
+  color: inherit;
+  display: inline-block;
+}
+
+.item-practice__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 30px;
+}
+
+.item-practice__content > *:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+
+.item-practice__title {
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.item-practice__text {
+  color: #737373;
+  line-height: 142%;
+}
+
+.item-practice__image {
+  display: block;
+  padding: 0px 0px 60% 0px;
+}
+
 @media screen and (min-width: 479px) {
   .main-block__button:not(:last-child) {
     margin-right: 10px;
@@ -482,11 +554,25 @@ body {
   }
 }
 
+@media screen and (max-width: 1040px) {
+  .practice__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+
 @media screen and (max-width: 1020px) {
   .advantages__column {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .practice {
+    padding: 40px 0px 80px 0px;
   }
 }
 
@@ -541,6 +627,22 @@ body {
 
   .advantages__header {
     margin: 0px 0px 35px 0px;
+  }
+
+  .practice {
+    padding: 0px 0px 40px 0px;
+  }
+
+  .practice__header {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .practice__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
 
