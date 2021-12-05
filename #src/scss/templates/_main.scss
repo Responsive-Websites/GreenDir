@@ -10,7 +10,10 @@
   }
   &__about {
   }
-  &__partners {
+  &__partners:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+  }
+  &__subscribe {
   }
 }
 
@@ -577,6 +580,108 @@
 
     & img {
       width: 70px;
+    }
+  }
+}
+
+// ----------------------------------------------------
+
+// subscribe block
+
+.subscribe {
+  position: relative;
+  padding: 0px 0px 20px 0px;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 77px;
+    background-color: #8378ca;
+  }
+  &__body {
+    position: relative;
+    z-index: 2;
+
+    padding: 30px 50px;
+    align-items: center;
+    background-color: #998ceb;
+    border-radius: 2px;
+
+    @media screen and (min-width: 1070px) {
+      & {
+        margin: 0px 30px;
+      }
+    }
+    @media screen and (min-width: 810px) {
+      & {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    @media screen and (max-width: 810px) {
+      & {
+        margin: 0px -15px;
+        padding: 20px 25px;
+        border-radius: 0px;
+      }
+    }
+  }
+  &__title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 133%;
+
+    @media screen and (max-width: 810px) {
+      & {
+        margin: 0px 0px 20px 0px;
+      }
+    }
+    @media screen and (min-width: 810px) {
+      & {
+        max-width: 266px;
+      }
+    }
+  }
+  &__form {
+    flex: 0 1 50%;
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 58px;
+    padding: 0px 20px;
+    border-radius: 5px 0px 0px 5px;
+    color: #737373;
+    &:focus {
+      & {
+        color: #000000;
+      }
+    }
+    @media screen and (max-width: 810px) {
+      & {
+        padding: 0px 15px;
+      }
+    }
+  }
+  &__button {
+    background-color: #77e4d4;
+    color: #000000;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    min-height: 58px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 22px;
+
+    @media screen and (max-width: 810px) {
+      & {
+        padding: 0px 15px;
+      }
     }
   }
 }

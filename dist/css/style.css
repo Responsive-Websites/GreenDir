@@ -242,6 +242,10 @@ body {
           flex: 1 1 auto;
 }
 
+.main__partners:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
 .header-block {
   text-align: center;
   letter-spacing: 0.2px;
@@ -672,6 +676,83 @@ body {
   width: 70px;
 }
 
+.subscribe {
+  position: relative;
+  padding: 0px 0px 20px 0px;
+}
+
+.subscribe:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 77px;
+  background-color: #8378ca;
+}
+
+.subscribe__body {
+  position: relative;
+  z-index: 2;
+  padding: 30px 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #998ceb;
+  border-radius: 2px;
+}
+
+.subscribe__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133%;
+}
+
+.subscribe__form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__input {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 58px;
+  padding: 0px 20px;
+  border-radius: 5px 0px 0px 5px;
+  color: #737373;
+}
+
+.subscribe__input:focus {
+  color: #000000;
+}
+
+.subscribe__button {
+  background-color: #77e4d4;
+  color: #000000;
+  border-radius: 0px 5px 5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 58px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 22px;
+}
+
 @media screen and (min-width: 479px) {
   .main-block__button:not(:last-child) {
     margin-right: 10px;
@@ -692,6 +773,27 @@ body {
 
   .services__column {
     padding: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .subscribe__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .subscribe__title {
+    max-width: 266px;
+  }
+}
+
+@media screen and (min-width: 1070px) {
+  .subscribe__body {
+    margin: 0px 30px;
   }
 }
 
@@ -790,6 +892,26 @@ body {
 
   .about__title {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .subscribe__body {
+    margin: 0px -15px;
+    padding: 20px 25px;
+    border-radius: 0px;
+  }
+
+  .subscribe__title {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .subscribe__input {
+    padding: 0px 15px;
+  }
+
+  .subscribe__button {
+    padding: 0px 15px;
   }
 }
 
