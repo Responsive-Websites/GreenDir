@@ -15,6 +15,8 @@
   }
   &__subscribe {
   }
+  &__getintouch {
+  }
 }
 
 // headers styles
@@ -681,6 +683,110 @@
     @media screen and (max-width: 810px) {
       & {
         padding: 0px 15px;
+      }
+    }
+  }
+}
+
+// ----------------------------------------------------
+
+// GetInTouch block
+
+.getintouch {
+  padding: 80px 0px 135px 0px;
+  @media screen and (max-width: 992px) {
+    & {
+      padding: 50px 0px 50px 0px;
+    }
+  }
+  &__container {
+  }
+  &__header {
+    margin: 0px 0px 80px 0px;
+    @media screen and (max-width: 992px) {
+      & {
+        margin: 0px 0px 50px 0px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      & {
+        margin: 0px 0px 30px 0px;
+      }
+    }
+  }
+  &__items {
+    margin: 0px -15px;
+    @media screen and (min-width: 992px) {
+      & {
+        margin: 0;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  &__item {
+    flex: 0 1 33.333%;
+  }
+}
+.item-getintouch {
+  & > *:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 50px 15px;
+  &__icon {
+    & img {
+      width: 80px;
+    }
+  }
+
+  &__emails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+    font-size: 16px;
+  }
+  &__email {
+    color: inherit;
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  &__button {
+    min-height: 44px;
+    border-radius: 5px;
+    border: 1px solid #998ceb;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 142%;
+    padding: 5px 20px;
+  }
+  &_active {
+    background-color: #77e4d4;
+    color: #ffffff;
+    padding: 80px 15px;
+    & .item-getintouch__button {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+    }
+    @media screen and (max-width: 992px) {
+      & {
+        padding: 50px 15px;
       }
     }
   }
