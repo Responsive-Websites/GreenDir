@@ -47,7 +47,7 @@
     margin: 0px 0px 10px 0px;
   }
   &__sub-title {
-    color: #737373;
+    color: $fontColorMenu;
     line-height: 142%;
   }
 }
@@ -116,7 +116,7 @@
   }
 
   &__text {
-    color: #737373;
+    color: $fontColorMenu;
     font-size: 20px;
     line-height: 150%;
   }
@@ -158,22 +158,22 @@
   }
 
   &__button_border {
-    color: #998ceb;
-    border: solid 1px #998ceb;
+    color: $purpleMainColor;
+    border: solid 1px $purpleMainColor;
     background: #ffffff;
 
     &:hover {
       color: #ffffff;
-      background-color: #998ceb;
+      background-color: $purpleMainColor;
     }
   }
   &__button_violet {
     color: #ffffff;
-    background: #998ceb;
+    background: $purpleMainColor;
     &:hover {
-      color: #998ceb;
+      color: $purpleMainColor;
       background-color: #ffffff;
-      outline: solid 1px #998ceb;
+      outline: solid 1px $purpleMainColor;
     }
   }
 }
@@ -252,7 +252,7 @@
   }
 
   &__text {
-    color: #737373;
+    color: $fontColorMenu;
     line-height: 142%;
   }
 }
@@ -328,7 +328,7 @@
     color: #000000;
   }
   &__text {
-    color: #737373;
+    color: $fontColorMenu;
     letter-spacing: 0.1px;
     font-size: 16px;
     line-height: 150%;
@@ -395,7 +395,7 @@
     display: inline-block;
     transition: 0.5s;
     &:hover {
-      color: #998ceb;
+      color: $purpleMainColor;
     }
   }
   &__content {
@@ -412,7 +412,7 @@
     line-height: 150%;
   }
   &__text {
-    color: #737373;
+    color: $fontColorMenu;
     line-height: 142%;
   }
   &__image {
@@ -529,7 +529,7 @@
     }
   }
   &__text {
-    color: #737373;
+    color: $fontColorMenu;
     line-height: 142%;
   }
   &__items {
@@ -564,7 +564,7 @@
     }
   }
   &__text {
-    color: #737373;
+    color: $fontColorMenu;
     line-height: 142%;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -625,7 +625,7 @@
 
     padding: 30px 50px;
     align-items: center;
-    background-color: #998ceb;
+    background-color: $purpleMainColor;
     border-radius: 2px;
 
     @media screen and (min-width: 1070px) {
@@ -675,7 +675,7 @@
     min-height: 58px;
     padding: 0px 20px;
     border-radius: 5px 0px 0px 5px;
-    color: #737373;
+    color: $fontColorMenu;
     &:focus {
       & {
         color: #000000;
@@ -688,7 +688,7 @@
     }
   }
   &__button {
-    background-color: #77e4d4;
+    background-color: $tealMainColor;
     color: #000000;
     border-radius: 0px 5px 5px 0px;
     display: flex;
@@ -698,10 +698,10 @@
     padding: 0px 22px;
     transition: 0.5s;
     &:hover {
-      background-color: #fbf46d;
+      background-color: $YellowSubColor;
     }
     &:active {
-      background-color: #b4fe98;
+      background-color: $greenSubColor;
     }
 
     @media screen and (max-width: 810px) {
@@ -791,7 +791,7 @@
   &__button {
     min-height: 44px;
     border-radius: 5px;
-    border: 1px solid #998ceb;
+    border: 1px solid $purpleMainColor;
     font-weight: 600;
     display: flex;
     text-align: center;
@@ -801,12 +801,12 @@
     padding: 5px 20px;
     transition: 0.5s;
     &:hover {
-      background-color: #998ceb;
+      background-color: $purpleMainColor;
       color: #ffffff;
     }
   }
   &_active {
-    background-color: #fbf46d;
+    background-color: $YellowSubColor;
     color: #000000;
     padding: 90px 15px;
     transition: 0.5s;
@@ -814,11 +814,11 @@
       border-radius: 20px;
     }
     & .item-getintouch__button {
-      border: 1px solid #998ceb;
-      color: #998ceb;
+      border: 1px solid $purpleMainColor;
+      color: $purpleMainColor;
       transition: 0.5s;
       &:hover {
-        background-color: #998ceb;
+        background-color: $purpleMainColor;
 
         color: #ffffff;
       }
@@ -868,12 +868,12 @@
     }
   }
   &__text {
-    color: #737373;
+    color: $fontColorMenu;
     line-height: 142%;
   }
   &__button {
     display: flex;
-    background-color: #998ceb;
+    background-color: $purpleMainColor;
     border-radius: 5px;
     min-height: 58px;
     text-align: center;
@@ -883,7 +883,7 @@
     color: #ffffff;
     transition: 0.5s;
     &:hover {
-      background-color: #77e4d4;
+      background-color: $tealMainColor;
       color: #000000;
     }
   }

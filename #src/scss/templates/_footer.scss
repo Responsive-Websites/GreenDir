@@ -1,6 +1,6 @@
 .footer {
   &__top {
-    background-color: #998ceb;
+    background-color: $purpleMainColor;
     padding: 35px 0px;
   }
   &__main {
@@ -59,7 +59,7 @@
     }
   }
   &__copy {
-    color: #737373;
+    color: $fontColorMenu;
     line-height: 171%;
     @media screen and (max-width: 767px) {
       & {
@@ -88,7 +88,7 @@
     letter-spacing: 0.2px;
     transition: 0.5s;
     &:hover {
-      color: #77e4d4;
+      color: $tealMainColor;
     }
   }
 }
@@ -107,7 +107,7 @@
     }
     transition: 0.5s;
     &:hover {
-      color: #fbf46d;
+      color: $YellowSubColor;
     }
     &_phone {
       background: url("../../img/icons/forFooter/phone.svg") 0 0 no-repeat;

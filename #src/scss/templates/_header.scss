@@ -11,7 +11,7 @@
   &__container {
     display: flex;
     flex-flow: row;
-    min-height: 104px;
+    min-height: 74px;
     align-items: center;
     // justify-content: space-between;
     // min-height: 70px;
@@ -145,16 +145,16 @@
     line-height: 171%;
     font-weight: 600;
     &:hover {
-      color: #998ceb;
+      color: $purpleMainColor;
     }
     transition: 0.5s;
     @media screen and (max-width: 767px) {
       & {
-        color: #998ceb;
+        color: $purpleMainColor;
         font-size: 24px;
       }
       &:hover {
-        color: #77e4d4;
+        color: $tealMainColor;
       }
     }
   }
