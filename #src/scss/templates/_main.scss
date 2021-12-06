@@ -17,6 +17,8 @@
   }
   &__getintouch {
   }
+  &__contact {
+  }
 }
 
 // headers styles
@@ -789,6 +791,59 @@
         padding: 50px 15px;
       }
     }
+  }
+}
+
+// ----------------------------------------------------
+
+// contact block
+
+.contact {
+  background-color: #ffffff;
+  padding: 42px 0px;
+  &__container {
+  }
+  &__body {
+    @media screen and (min-width: 767px) {
+      & {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+  &__content {
+    padding: 0px 0px 20px 0px;
+    @media screen and (min-width: 767px) {
+      & {
+        padding: 0px 20px 0px 0px;
+      }
+    }
+  }
+  &__title {
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    font-size: 24px;
+    line-height: 133%;
+
+    &:not(:last-child) {
+      margin: 0px 0px 10px 0px;
+    }
+  }
+  &__text {
+    color: #737373;
+    line-height: 142%;
+  }
+  &__button {
+    display: flex;
+    background-color: #998ceb;
+    border-radius: 5px;
+    min-height: 58px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 40px;
+    color: #ffffff;
   }
 }
 
