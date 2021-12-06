@@ -255,6 +255,13 @@ body._lock {
   color: #737373;
   line-height: 171%;
   font-weight: 600;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__link:hover {
+  color: #998ceb;
 }
 
 .main {
@@ -372,6 +379,9 @@ body._lock {
   line-height: 150%;
   text-align: center;
   margin: 10px 0px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main-block__button_border {
@@ -380,9 +390,20 @@ body._lock {
   background: #ffffff;
 }
 
+.main-block__button_border:hover {
+  color: #ffffff;
+  background-color: #998ceb;
+}
+
 .main-block__button_violet {
   color: #ffffff;
   background: #998ceb;
+}
+
+.main-block__button_violet:hover {
+  color: #998ceb;
+  background-color: #ffffff;
+  outline: solid 1px #998ceb;
 }
 
 .services {
@@ -485,7 +506,7 @@ body._lock {
 }
 
 .practice {
-  padding: 125px 0px 80px 0px;
+  padding: 65px 0px 80px 0px;
 }
 
 .practice__header {
@@ -526,6 +547,13 @@ body._lock {
 .item-practice__link {
   color: inherit;
   display: inline-block;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.item-practice__link:hover {
+  color: #998ceb;
 }
 
 .item-practice__content {
@@ -772,6 +800,17 @@ body._lock {
       -ms-flex-align: center;
           align-items: center;
   padding: 0px 22px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.subscribe__button:hover {
+  background-color: #fbf46d;
+}
+
+.subscribe__button:active {
+  background-color: #b4fe98;
 }
 
 .getintouch {
@@ -868,16 +907,39 @@ body._lock {
           align-items: center;
   line-height: 142%;
   padding: 5px 20px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.item-getintouch__button:hover {
+  background-color: #998ceb;
+  color: #ffffff;
 }
 
 .item-getintouch_active {
-  background-color: #77e4d4;
-  color: #ffffff;
-  padding: 80px 15px;
+  background-color: #fbf46d;
+  color: #000000;
+  padding: 90px 15px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.item-getintouch_active:hover {
+  border-radius: 20px;
 }
 
 .item-getintouch_active .item-getintouch__button {
-  border: 1px solid #ffffff;
+  border: 1px solid #998ceb;
+  color: #998ceb;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.item-getintouch_active .item-getintouch__button:hover {
+  background-color: #998ceb;
   color: #ffffff;
 }
 
@@ -922,6 +984,14 @@ body._lock {
           justify-content: center;
   padding: 5px 40px;
   color: #ffffff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact__button:hover {
+  background-color: #77e4d4;
+  color: #000000;
 }
 
 .footer__top {
@@ -998,6 +1068,13 @@ body._lock {
   color: #ffffff;
   line-height: 171%;
   letter-spacing: 0.2px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu-footer__link:hover {
+  color: #77e4d4;
 }
 
 .contacts-footer {
@@ -1021,10 +1098,17 @@ body._lock {
       -ms-flex-align: center;
           align-items: center;
   min-height: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .contacts-footer__item:not(:last-child) {
   margin: 0px 0px 12px 0px;
+}
+
+.contacts-footer__item:hover {
+  color: #fbf46d;
 }
 
 .contacts-footer__item_phone {
@@ -1352,6 +1436,10 @@ body._lock {
   .menu__link {
     color: #998ceb;
     font-size: 24px;
+  }
+
+  .menu__link:hover {
+    color: #77e4d4;
   }
 
   .header-block__title {

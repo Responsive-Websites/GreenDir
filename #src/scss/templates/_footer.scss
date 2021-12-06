@@ -86,6 +86,10 @@
     color: #ffffff;
     line-height: 171%;
     letter-spacing: 0.2px;
+    transition: 0.5s;
+    &:hover {
+      color: #77e4d4;
+    }
   }
 }
 .contacts-footer {
@@ -100,6 +104,10 @@
     min-height: 30px;
     &:not(:last-child) {
       margin: 0px 0px 12px 0px;
+    }
+    transition: 0.5s;
+    &:hover {
+      color: #fbf46d;
     }
     &_phone {
       background: url("../../img/icons/forFooter/phone.svg") 0 0 no-repeat;
