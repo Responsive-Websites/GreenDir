@@ -7,6 +7,10 @@ body {
   font-size: $fontSizeMain;
   color: $fontColorMain;
   background-color: #fafafa;
+
+  &._lock {
+    overflow: hidden;
+  }
 }
 
 .wrapper {
