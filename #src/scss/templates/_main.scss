@@ -96,6 +96,12 @@
     @media screen and (max-width: 479px) {
       & {
         padding: 115px 0px 160px 0px;
+        max-width: none;
+      }
+    }
+    @media screen and (max-width: 490px) {
+      & {
+        max-width: none;
       }
     }
   }
@@ -150,7 +156,7 @@
         flex: 1 1 100%;
       }
     }
-    @media screen and (min-width: 479px) {
+    @media screen and (min-width: 480px) {
       &:not(:last-child) {
         margin-right: 10px;
       }

@@ -1127,7 +1127,7 @@ body._lock {
   margin: 0px 20px 0px 0px;
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 480px) {
   .main-block__button:not(:last-child) {
     margin-right: 10px;
   }
@@ -1523,9 +1523,16 @@ body._lock {
   }
 }
 
+@media screen and (max-width: 490px) {
+  .main-block__body {
+    max-width: none;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .main-block__body {
     padding: 115px 0px 160px 0px;
+    max-width: none;
   }
 
   .main-block__title {
